@@ -5,7 +5,7 @@ import ec.edu.ups.dao.ClienteDao;
 import ec.edu.ups.dao.IClienteDao;
 
 public class Principal {
-    
+
     public static void main(String[] args) {
         //objeto para manipular el dao
         IClienteDao clienteDao = new ClienteDao();
@@ -24,6 +24,7 @@ public class Principal {
         //imprimir los clientes
         System.out.println("****");
         clienteDao.obtenerClientes().forEach(System.out::println);
+ System.out.println("hola mundo");
     }
-    
+
 }
